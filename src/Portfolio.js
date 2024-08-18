@@ -11,13 +11,14 @@ import img3 from './images/img3.jpg';
 import img4 from './images/img4.jpg';
 import img5 from './images/img5.jpg';
 import img6 from './images/img6.jpg';
+import ananthiresume from './pdf/ANANTHI_M.pdf';
 
 function Portfolio() {
     return (
         <div>
             {/* <!-- Nav Bar --> */}
             <header class="header">
-                <a href="#" class="logo">Portfolio.</a>
+                <a href="#" class="logo">Portfolio</a>
 
                 <i class="fa-solid fa-bars" id="menu-icon"></i>
 
@@ -27,7 +28,6 @@ function Portfolio() {
                     <a href="#home" class="active">Home</a>
                      <a href="#about">About</a>
                     <a href="#service">Service</a>
-                    <a href="#portfolio">portfolio</a>
                     <a href="#contact">Contact</a>
                   
                 </nav>
@@ -49,7 +49,7 @@ function Portfolio() {
                         <a href="https://www.twitter.com/"><FaTwitter /></a>
                         <a href="https://www.facebook.com/"><FaFacebook /></a>
                     </div>
-                    <a target="_blank" href="/Ananthiresume.pdf" class="btn">Download CV</a>
+                    <a target="_self" href={ananthiresume} class="btn">Download CV</a>
                 </div>
 
                 </section>
@@ -57,7 +57,7 @@ function Portfolio() {
             {/* <!-- About Section --> */}
             <section class="about" id="about">
                 <div class="about-img">
-                    <img src={About}alt="About" />
+                    <img src={About} alt="About" />
                 </div>
                 <div class="about-content">
                     <h2 class="heading">About <span>Me</span></h2>
@@ -76,104 +76,37 @@ function Portfolio() {
                     <div class="service-box">
                         <i class="fa-solid fa-code"></i>
                         <h3>Web Development</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id possimus, error sequi fugit aliquam
-                            doloremque, laudantium hic modi dolorem necessitatibus quibusdam aut omnis? Incidunt, odio. Placeat
-                            explicabo asperiores inventore unde.</p>
+                        <p>Front-End Development: 
+                            Creating responsive  and  interactive  websites using HTML, CSS, JavaScript, and frameworks like React.js.<br/>
+Back-End Development: Building robust and scalable server-side applications using Node.js, Express.js, and database management with MongoDB or SQL.</p>
                         <a href="#" class="btn">Read more</a>
                     </div>
                     <div class="service-box">
                         <i class="fa-solid fas fa-palette"></i>
                         <h3>UI/UX Designing</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id possimus, error sequi fugit aliquam
-                            doloremque, laudantium hic modi dolorem necessitatibus quibusdam aut omnis? Incidunt, odio. Placeat
-                            explicabo asperiores inventore unde.</p>
+                        <p>User Research: Detail your approach to understanding user needs and behaviors through research methods like surveys, interviews, and usability testing.<br/>
+Wireframing & Prototyping: Explain how you create wireframes and prototypes to visualize the user interface and interactions before development.</p>
                         <a href="#" class="btn">Read more</a>
                     </div>
                     <div class="service-box">
                         <i class="fa-solid fab fa-android"></i>
                         <h3>App Development</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id possimus, error sequi fugit aliquam
-                            doloremque, laudantium hic modi dolorem necessitatibus quibusdam aut omnis? Incidunt, odio. Placeat
-                            explicabo asperiores inventore unde.</p>
+                        <p>Custom App Development: Describe your ability to build custom applications tailored to specific client needs, including front-end and back-end development.<br/>
+                        Cross-Platform Development: If you offer cross-platform development,emphasize how this can help clients reach a broader audience with a single codebase.</p>
                         <a href="#" class="btn">Read more</a>
                     </div>
                 </div>
             </section>
 
-            {/* <!-- Service Section --> */}
-
-            <section class="portfolio" id="portfolio">
-                <h2 class="heading">Latest <sapn>Project</sapn>
-                </h2>
-
-                <div class="portfolio-container">
-                    <div class="portfolio-box">
-                        <img src={img1} />
-                        <div class="portfolio-layer">
-                            <h4>Web Design</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <i class="fa-solid fa-up-right-from-square"></i>
-                        </div>
-                    </div>
-                    <div class="portfolio-box">
-                        <img src={img2}/>
-                        <div class="portfolio-layer">
-                            <h4>Web Design</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <i class="fa-solid fa-up-right-from-square"></i>
-                        </div>
-                    </div>
-                    <div class="portfolio-box">
-                        <img src={img3}/>
-                        <div class="portfolio-layer">
-                            <h4>Web Design</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <i class="fa-solid fa-up-right-from-square"></i>
-                        </div>
-                    </div>
-                    <div class="portfolio-box">
-                        <img src={img4}/>
-                        <div class="portfolio-layer">
-                            <h4>Web Design</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <i class="fa-solid fa-up-right-from-square"></i>
-                        </div>
-                    </div>
-                    <div class="portfolio-box">
-                        <img src={img5} />
-                        <div class="portfolio-layer">
-                            <h4>Web Design</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <i class="fa-solid fa-up-right-from-square"></i>
-                        </div>
-                    </div>
-                    <div class="portfolio-box">
-                        <img src={img6} />
-                        <div class="portfolio-layer">
-                            <h4>Web Design</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <i class="fa-solid fa-up-right-from-square"></i>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
+            
             {/* <!-- Contact Section --> */}
             <section class="contact" id="contact">
                 <h1 class="heading"> Contact <span>Me</span></h1>
-                <form action="#">
-                    <div class="input-box">
-                        <input type="text" placeholder="Enter Your Name" />
-                        <input type="email" placeholder="Enter Your email" />
-                    </div>
-                    <div class="input-box">
-                        <input type="number" placeholder="Phone Number" />
-                        <input type="text" placeholder="Email Subject" />
-                    </div>
-                    <textarea name="" id="" cols="20" rows="10" placeholder="Your Message"></textarea>
-                    <input type="submit" value="Send Message" class="btn" />
-                </form>
-
+                <div className='contact1'>
+                <h2>PHONE : 9566346707</h2>
+                <h2>EMAIL : ananthimeyyappan1502@gmail.com</h2>
+                <h2>ADDRESS : 3/132,East street,Gurusamipalayam,Namakkal-637403</h2>
+                </div>
 
             </section>
 
@@ -188,18 +121,7 @@ function Portfolio() {
             </footer>
 
 
-
-
-            {/* <!-- scroll reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- typed js -->
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-
-    <!-- Script -->
-    <script src="assets/script.js"></script> */}
-        </div>
+ </div>
 
 
     );
